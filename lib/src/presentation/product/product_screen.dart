@@ -45,6 +45,10 @@ class ProductScreen extends ConsumerWidget {
                           product.title,
                           style: const TextStyle(fontWeight: FontWeight.bold),
                         ),
+                        leading: ClipRRect(
+                          borderRadius: BorderRadius.circular(8),
+                          child: Image.network(product.thumbnail),
+                        ),
                         subtitle: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
